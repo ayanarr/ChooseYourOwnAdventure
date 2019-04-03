@@ -2,7 +2,7 @@
 
 var game = {
     music: "98_Lost_Mine.mp3",
-    background_image: "",
+    background_image: "mall.jpg",
     levels: {
 
         start: {
@@ -21,7 +21,7 @@ var game = {
         },
 
         store: {
-            background_image: "fire.gif",
+            background_image: "mall.jpg",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
             message: "buy lots of clothes",
             choices: [
@@ -41,15 +41,16 @@ var game = {
         },
 
         fast_food: {
+            background_image: "featuredmcwendy.jpg",
             message: "you have two fast food choices",
             choices: [
                 {
                     text: "wendys",
-                    nextLevel: "start",
+                    nextLevel: "wendys",
                 }, 
                 {
                     text: "mcdonalds",
-                    nextLevel: "start",
+                    nextLevel: "mcdonalds",
                 },
                 {
                     text: "start over",
@@ -74,8 +75,8 @@ var game = {
                     nextLevel: "start",
                 },
             ]
-              },
-                notbroke: {
+        },
+        notbroke: {
             message: "Since you have money left",
             choices: [
                 {
@@ -92,8 +93,29 @@ var game = {
                     text: "start over",
                     nextLevel: "start",
                 },
+             ]
+        },        
+             
+        mcdonalds: {
+            
+            background_image:"mcdonalds-fast-food-500x366.jpg",
+        message:"That was great!",
+            choices:[
+               {
+                    text:"start over",
+                    nextLevel:"start",
+               },
+              ]
+            },
+              wendys: {
+                  background_image:"fast-food-wendys.jpg",
+          message:"That was great!",
+            choices:[
+               {
+                    text:"start over",
+                    nextLevel:"start",
+               },
             ]
         },
-
     }
 };
